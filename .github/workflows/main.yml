@@ -1,9 +1,9 @@
 name: TypeScript Build
-
+#When there is a push to master, this script will build the typescript files
 on:
   push:
-    branches: [ master]
-    
+    branches: [ master ]
+
 jobs:
   build_typescript:
     runs-on: windows-latest
