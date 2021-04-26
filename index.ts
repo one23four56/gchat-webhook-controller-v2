@@ -1,7 +1,5 @@
 import fetch from 'node-fetch';
 const input = require('prompt-sync')();
-//THIS BUILD WILL FAIL !!!! THIS IS ON PURPOSE TO TEST THE TYPESCRIPT_BUILD SCRIPT!!!!!
-const fail: boolean = "string"
 
 (function setup(){
     console.log(`Webhook Controller V2 Setup
