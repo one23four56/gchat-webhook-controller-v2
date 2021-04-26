@@ -1,20 +1,17 @@
-import fetch from 'node-fetch';
-const input = require('prompt-sync')();
-
 (function setup(){
     console.log(`Webhook Controller V2 Setup
 Enter '!exit' as the URL or message body to exit`)
     try {
-        let url: string = input('Please enter a webhook url to use for this session: ')
+        let url: string | null = prompt('Please enter a webhook url to use for this session: ')
         if (url==="!exit"||url==='"!exit"'||url==="'!exit'"||url===null) return false
-        if (input(`You want to use '${url}' as your session url, right? (y/n) `)==="n") {setup();return false}
+        if (confirm(`You want to use '${url}' as your session url, right? (y/n) `)===false) {setup();return false}
         console.log(`Testing '${url}'...`)
         fetch(url)
         .then(res=>{
             if (res.status!==401) {console.error(`Test ping failed (${res.status}: ${res.statusText})`);setup()}
             console.log(`Test ping ponged (${res.status}: ${res.statusText}) (401 is good in this case)
 Starting main process...`)
-            main(url)
+            main(url as string)
             return false;
         })
         .catch(err=>{
@@ -27,13 +24,13 @@ Starting main process...`)
     }
 })()
 
-function main(url: string) {
-    let message: string = input(`Please enter a message: `)
+function main(url: string | null) {
+    let message: string | null = prompt(`Please enter a message: `)
     if (message==="!exit"||message==="'!exit'"||message==='"!exit"'||message===null) return false;
-    let imgurl: string = undefined;
-    if (input("Would you like to attach an image? (y/n) ")==="y") imgurl = input("Enter image url: ")
+    let imgurl: string | null = null;
+    if (confirm("Would you like to attach an image? (y/n) ")===true) imgurl = prompt("Enter image url: ")
     if (imgurl) {
-        fetch(url, {
+        fetch(url as string, {
             method: 'POST',
             body: JSON.stringify({
                 'text': message, 
@@ -64,7 +61,7 @@ function main(url: string) {
             return false;
         })
     } else {
-        fetch(url, {
+        fetch(url as string, {
             method: 'POST',
             body: JSON.stringify({
                 'text': message

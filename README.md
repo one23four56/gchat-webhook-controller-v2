@@ -3,6 +3,8 @@ A command-line-centered webhook control panel for Google Chat.
 
 ## Setup for Windows
 
+### Warning!!! These instructions are **OUTDATED**! They will be updated soon!
+
 Setting this up is actually quite easy. You have to have [Node.js](https://nodejs.org/en/download/), npm (npm comes with Node.js), and [Git](https://git-scm.com/downloads) installed before you can install this.  
 
 Once you have installed Node.js and Git, open Powershell or Command Prompt by typing 'Powershell' or 'Command Prompt' into the start search bar. It does not matter which one you choose. You could also use a different terminal, like Bash, but these instructions are for Powershell and Command Prompt.  

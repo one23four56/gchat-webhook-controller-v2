@@ -1,16 +1,13 @@
-name: TypeScript Build
-#When there is a push to master, this script will build the typescript files
+name: Deno Test
+# When there is a push to master, this script will run it with Deno to make sure it works
 on:
   push:
     branches: [ master ]
 
 jobs:
-  build_typescript:
+  run_deno:
     runs-on: windows-latest
-    steps: 
+    steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 15
-      - run: npm ci 
-      - run: npm run build
+      - uses: denolib/setup-deno@v2.3.0
+      - run: deno run --allow-net index.ts
