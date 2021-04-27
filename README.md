@@ -10,9 +10,9 @@ If you look under the releases tab (to the right) and click the latest release, 
 
 Once you got the file open, press `Ctrl+A` to select all, and then `Ctrl+C` to copy.  
 
-Now, open the browser you use and make a bookmark. You can make it on any page. Change the name to something like 'Webhook'. Click the button that allows you to change the URL. When you are editing the URL, type `javascript:` and then press `Ctrl+V` to paste what you copied.   
+Now, open the browser you use and make a bookmark. You can make it on any page. Change the name to something like 'Webhook'. Click the button that allows you to change the URL. When you are editing the URL, delete everything that was already there, and then type `javascript:` and then press `Ctrl+V` to paste what you copied.   
 
-Finish creating the bookmark. Then, click it when you are on any site. A popup should appear that lets you sent Webhook messages. 
+Finish creating the bookmark. Then, click it when you are on any site. A popup should appear that lets you send Webhook messages. 
 
 ## Setup for Windows
 
