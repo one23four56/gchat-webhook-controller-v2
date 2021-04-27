@@ -20,7 +20,7 @@ Setting this up is actually quite easy. You only have to have [Git](https://git-
 
 Once you have installed Git, open Powershell or Command Prompt by typing 'Powershell' or 'Command Prompt' into the start search bar. It does not matter which one you choose. You could also use a different terminal, like Bash, but these instructions are for Powershell and Command Prompt.  
 
-When you have opened a terminal, you need to navigate to the folder you want to install this in. To enter a folder, you can do this by typing `cd <FOLDER_NAME>` (obviously replace `<FOLDER_NAME>` with the actual folder name). To exit the folder you are currently in, type `cd ..`. You can also type `dir` to list all the folders in your current folder. Once you have entered the folder you want to download this into, run the following command:
+When you have opened a terminal, you need to navigate to the folder you want to install this in. To enter a folder, you can type  `cd <FOLDER_NAME>` (obviously replace `<FOLDER_NAME>` with the actual folder name). To exit the folder you are currently in, type `cd ..`. You can also type `dir` to list all the folders in your current folder. Once you have entered the folder you want to download this into, run the following command:
 
         git clone https://github.com/one23four56/gchat-webhook-controller-v2.git
         
