@@ -2,6 +2,10 @@
 
 A command-line-centered webhook control panel for Google Chat. 
 
+[Use from the Browser](#use-from-the-browser)  
+[Use from the command line (Windows)](#use-from-the-command-line-windows)  
+[Usage](#usage)
+
 ## Use from the Browser
 
 This webhook controller is written in such a way that you can use it without really downloading anything. It still requires some setup, however, but not much.   
@@ -62,3 +66,14 @@ Here is every line explained:
 3. `cd downloads` switches out of my user folder and into my downloads folder
 4. `cd gchat-webhook-controller-v2` switches into the folder containing this program 
 5. `deno run --allow-net index.ts` starts this program
+
+## Usage 
+
+Before you can use this you have to have a webhook set up in Google Chat. You can do this by going into a group, clicking on the name, and clicking 'Manage Webhooks'.   
+![image](https://user-images.githubusercontent.com/72141247/116242575-a8103980-a72b-11eb-926d-c781c8901b41.png)   
+When you click that, you should be taken to the make a webhook screen right away, but if not you have to click 'Add Another'.  
+![image](https://user-images.githubusercontent.com/72141247/116243118-35538e00-a72c-11eb-88b7-9a2019d21046.png)   
+![image](https://user-images.githubusercontent.com/72141247/116242874-f9b8c400-a72b-11eb-9b82-6435d2e16f8f.png)   
+The name and avatar image are what people see when your bot says something in chat. You can change them to whatever you want. When you are done making a webhook, click the copy button next to it to get the link.    
+![Screenshot 2021-04-27 074537](https://user-images.githubusercontent.com/72141247/116243702-d5a9b280-a72c-11eb-93ea-4ebbe8f1480f.png)   
+Now you can paste that link into this webhook controller and make the bot say whatever you want. 
