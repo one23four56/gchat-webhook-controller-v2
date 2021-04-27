@@ -8,7 +8,11 @@ A command-line-centered webhook control panel for Google Chat.
 
 ## Use from the Browser
 
-This webhook controller is written in such a way that you can use it without really downloading anything. It still requires some setup, however, but not much.   
+### Use on a single website
+
+This setup is really really easy. Under releases (to the right) click the latest release, and then under assets click `webhook.html`. When that file is done downloading, drag it onto your bookmarks bar. Click the bookmark to open a page with a button that you can click to open the popup. 
+
+### Use on any website 
 
 If you look under the releases tab (to the right) and click the latest release, under assets you will find a file entitled `webhook.js`. Click on that file to download it. When the download is done, open the file in your favorite text editor **or** just drag it onto your browser's tab bar. 
 
