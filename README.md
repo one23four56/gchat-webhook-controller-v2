@@ -2,11 +2,11 @@
 
 A command-line-centered webhook control panel for Google Chat. 
 
-## Use WITHOUT Setting Up
+## Use from the Browser
 
 This webhook controller is written in such a way that you can use it without really downloading anything. It still requires some setup, however, but not much.   
 
-If you look under the releases tab (to the right) and click the latest release, under assets you will find a file entitled `index.js`. Click on that file to download it. When the download is done, open it in your favorite text edior or drag it into the tab bar in your browser.   
+If you look under the releases tab (to the right) and click the latest release, under assets you will find a file entitled `webhook.js`. Click on that file to download it. When the download is done, open the file in your favorite text editor **or** just drag it onto your browser's tab bar. 
 
 Once you got the file open, press `Ctrl+A` to select all, and then `Ctrl+C` to copy.  
 
@@ -14,7 +14,7 @@ Now, open the browser you use and make a bookmark. You can make it on any page. 
 
 Finish creating the bookmark. Then, click it when you are on any site. A popup should appear that lets you send Webhook messages. 
 
-## Setup for Windows
+## Use from the command line (Windows)
 
 Setting this up is actually quite easy. You only have to have [Git](https://git-scm.com/downloads) installed before you can install this.  
 
