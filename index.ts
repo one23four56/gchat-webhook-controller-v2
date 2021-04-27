@@ -4,7 +4,7 @@ Enter '!exit' as the URL or message body to exit`)
     try {
         let url: string | null = prompt('Please enter a webhook url to use for this session: ')
         if (url==="!exit"||url==='"!exit"'||url==="'!exit'"||url===null) return false
-        if (confirm(`You want to use '${url}' as your session url, right? (y/n) `)===false) {setup();return false}
+        if (confirm(`You want to use '${url}' as your session url, right?`)===false) {setup();return false}
         console.log(`Testing '${url}'...`)
         fetch(url)
         .then(res=>{
@@ -28,7 +28,7 @@ function main(url: string | null) {
     let message: string | null = prompt(`Please enter a message: `)
     if (message==="!exit"||message==="'!exit'"||message==='"!exit"'||message===null) return false;
     let imgurl: string | null = null;
-    if (confirm("Would you like to attach an image? (y/n) ")===true) imgurl = prompt("Enter image url: ")
+    if (confirm("Would you like to attach an image?")===true) imgurl = prompt("Enter image url: ")
     if (imgurl) {
         fetch(url as string, {
             method: 'POST',
