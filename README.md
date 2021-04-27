@@ -28,8 +28,9 @@ When that command finishes, you will have installed the webhook controller. Yay!
 
         iwr https://deno.land/x/install/install.ps1 -useb | iex
 
-Once you have gotten Deno installed, you have to run this program. You can do that with the following command:
+Once you have gotten Deno installed, you have to run this program. You can do that with the following commands:
 
+        cd gchat-webhook-controller-v2
         deno run --allow-net index.ts
 
 ### Exiting 
