@@ -53,24 +53,6 @@ Once you have ran and exited this program for the first time, you may want to ru
 
 You do not need to run the `git clone` command if you already downloaded and set up this program. 
 
-### *Advanced* Running after Setup 
-
-If you consider yourself an *advanced* person and you find the above process long and annoying, there is a solution for you. You could write a custom batch script to run this program with a simple click of the mouse. This actually isn't even that hard; a batch script is just a list of commands. Lets say I put a batch script on my desktop and I want it to run this program, which is stored in the downloads folder. A simple batch script that does that would be:
-
-        @echo off 
-        cd ..
-        cd downloads 
-        cd gchat-webhook-controller-v2
-        deno run --allow-net index.ts
-        
-Here is every line explained: 
-
-1. `@echo off` disables output from commands like `cd`
-2. `cd ..` switches out of the desktop folder and into my user folder (if you have a new windows computer where desktop is part of OneDrive, you may have to have two of this command)
-3. `cd downloads` switches out of my user folder and into my downloads folder
-4. `cd gchat-webhook-controller-v2` switches into the folder containing this program 
-5. `deno run --allow-net index.ts` starts this program
-
 ## Usage 
 
 Before you can use this you have to have a webhook set up in Google Chat. You can do this by going into a group, clicking on the name, and clicking 'Manage Webhooks'.   
